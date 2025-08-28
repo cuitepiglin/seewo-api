@@ -65,7 +65,9 @@ https://id.seewo.com/scan/middle?uid=barcode_EB8983F7-3EED-4E29-8751-2FEFF830A85
 
 **示例:**
 ```shell
-curl 'https://id.seewo.com/scan/pcCheckQrcode?type=long&_=1727864084076'
+curl 'https://id.seewo.com/scan/pcCheckQrcode?type=long&_=1727864084076' \
+-b 'acw_tc=xxx' \
+-b 'qrkey=xxx'
 ```
 当密钥错误或二维码失效时`statusCode`为`300`, 且响应无延迟
 <details>
